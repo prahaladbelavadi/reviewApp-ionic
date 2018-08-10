@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { AddReviewPage } from '../pages/add-review-page/add-review-page';
-import { Reviews } from '../providers/reviews';
+import { AddReviewPage } from '../pages/add-review/add-review';
+import { ReviewsProvider } from '../providers/reviews/reviews';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,6 @@ import { Reviews } from '../providers/reviews';
     HomePage,
     AddReviewPage
   ],
-  providers: [Reviews]
+  providers: [ReviewsProvider]
 })
 export class AppModule {}
